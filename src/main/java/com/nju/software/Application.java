@@ -1,10 +1,18 @@
 package com.nju.software;
 
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+
 import org.apache.ibatis.session.SqlSessionFactory;
+import org.elasticsearch.client.transport.TransportClient;
+import org.elasticsearch.common.settings.Settings;
+import org.elasticsearch.common.transport.InetSocketTransportAddress;
+import org.elasticsearch.transport.client.PreBuiltTransportClient;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.annotation.MapperScan;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -15,6 +23,9 @@ import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.transaction.PlatformTransactionManager;
 
+import com.nju.software.config.EsConfig;
+import com.nju.software.util.ConstantUtil;
+
 import javax.sql.DataSource;
 
 @EnableAutoConfiguration
@@ -23,6 +34,7 @@ import javax.sql.DataSource;
 @MapperScan("com.nju.software.dataobject.dao")
 public class Application {
 
+	
 	 private static final Logger logger =LoggerFactory.getLogger(Application.class);
     @Bean
     @ConfigurationProperties(prefix="spring.datasource")
@@ -48,7 +60,7 @@ public class Application {
         return new DataSourceTransactionManager(dataSource());
     }
 
-
+   
     /**
      * Start
      */

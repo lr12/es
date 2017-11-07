@@ -7,6 +7,6 @@ package com.nju.software.util;
 public class ConstantUtil {
 
 	public static final String ip="127.0.0.1";
-	public static final int port=9200;
+	public static final int port=9300;
 	
 }
