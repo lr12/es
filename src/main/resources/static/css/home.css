@@ -1,0 +1,285 @@
+@charset "UTF-8";
+
+.login-header{
+}
+.header-bg{
+    padding: 10px;
+    background-color: #C3E6FA;
+}
+
+a.info-item.item:hover{
+    background: #C3E6FA;
+}
+.ui.compact.btn-info.label{
+    padding: 0;
+}
+
+.right.menu{
+    font-size: 16px;
+}
+
+.right.menu button.ui.button{
+    background-color: #C3E6FA;
+}
+
+.ui.secondary.menu.system-actions{
+    padding: 20px;
+}
+
+.right.menu i.sp-large{
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.ui.floating.label.info-account{
+    left: 80%;
+    top: -15%;
+}
+
+.ui.list .item{
+    cursor: pointer;
+}
+
+.navigator .ui.tab.segment {
+    height: auto !important;
+	padding: 
+    /*overflow-y: auto;*/
+    /*overflow-x: hidden;*/
+}
+
+.navigator .ui.segment.ds-detail{
+    /*height: 550px;*/
+    /*overflow-y: auto;
+    /*overflow-x: hidden;*/
+    max-height: 550px;
+}
+
+.navigator #ds-detail-content{
+    height: 500px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.navigator .ui.tab.segment.sub {
+    height: 550px;
+}
+
+.data-standard {
+    padding: 0 30px;
+}
+
+.data-standard .ui.items{
+    margin-top: 0;
+    padding: 0 40px;
+}
+
+.data-standard .ui.items .ui.item{
+    cursor: pointer;
+    text-align: center;
+}
+
+.main-search{
+    padding: 0 25px;
+}
+
+.main-search .ui.search input.prompt{
+    min-width: 300px;
+}
+
+.hot-search {
+    margin-top: 30px;
+    padding: 0 25px;
+}
+
+.hot-search .ui.horizontal.list{
+    padding: 5px 20px;
+}
+
+.hot-search .ui.horizontal.list .item ~ .item{
+    margin-left: 35px;
+}
+
+.ui.segment.search-area{
+    min-height: 450px;
+}
+
+.ui.search.ds-search{
+    width: 300px;
+}
+
+.ui.segment.ds-detail{
+    min-height: 500px;
+    font-family: '微软雅黑';
+}
+
+.ui.ds-detail .accordion .items{
+    padding-left: 35px;
+}
+
+.ui.segment.ds-detail .column{
+    position: relative;
+}
+
+/*.ui.segment.ds-detail .column .compress{*/
+    /*position: absolute;*/
+    /*top: 38%;*/
+    /*left: 89%;*/
+    /*z-index: 999;*/
+    /*overflow: hidden;*/
+    /*cursor: pointer;*/
+/*}*/
+
+.ui.segments.ds-detail .compress{
+    vertical-align: middle;
+}
+
+.ui.segment.ds-detail .column .ds-content{
+    /*overflow-x: hidden;*/
+    /*overflow-y: auto;*/
+}
+
+.main-db .ui.list{
+    padding: 0 15px;
+}
+
+.main-db .ui.list .item{
+    margin-top: 5px;
+}
+
+.main-db .db-content ~ .db-content{
+    margin-top: 15px;
+}
+
+.main-db .db-content > .db-content{
+    padding-left: 20px;
+}
+
+.main-db .tertiary.segment.db-content {
+    background-color: #C3E6FA;
+    /*background-color: #F9FAFB;*/
+    font-family: '微软雅黑';
+}
+
+.main-db .tertiary.segment.db-content h4.ui.header{
+    font-weight: normal;
+}
+
+.main-db .tertiary.segment.db-content table th{
+    font-weight: normal;
+}
+
+.db-content > table{
+    margin-top: 10px;
+}
+
+.ui.pagination a{
+    font-size: 14px;
+}
+
+.ui.right.floated{
+    float: right;
+}
+
+#adv-sear-accord .title{
+    position: absolute;
+    left: -999px;
+}
+
+#adv-sear-accord .content.field{
+    padding: 10px 5px;
+}
+
+.advanced-search.ui.item{
+    cursor: pointer;
+}
+
+.ui.header .more-item{
+    font-size: 14px;
+    color: #000000;
+    font-weight: normal;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.sticky-accord .horizontal.segments{
+    border: 0;
+    box-shadow: 0 0 0;
+}
+
+.sticky-accord .horizontal.segments .segment{
+    border: 0;
+}
+
+#btn-expand{
+    display: none;
+    cursor: pointer;
+}
+
+.ui.left.floated h2.ui.header{
+    padding-top: 5px;
+}
+
+.ui.left.floated h3.ui.header{
+    padding-top: 5px;
+}
+
+.ui.left.floated h4.ui.header{
+    padding-top: 10px;
+}
+
+#system-message{
+	position: fixed;
+	display: none;
+	top: 5%;
+	left: 30%;
+	right: 30%;
+}
+
+.b_wjm{
+	background:white;
+	border-style:none;
+	font-size:16px;
+	color:blue;
+	text-decoration:underline;
+	cursor:pointer;
+}
+
+.i-info{
+	color:green;
+	padding:1px 0px;
+	
+}
+
+.i-content{
+	font-size:13px;
+	color:black;
+	padding:5px 0px;
+	line-height:17px;
+	max-height:41px;
+	overflow:hidden;
+	}
+	
+.modal_table{
+	margin:0;
+	}
+			
+.modal_table tr{
+	line-height: 3;
+	}
+				
+.modal_table span{
+	font-size:15px;
+	font-weight: bold;
+	}
+.search_table{
+	margin:0;
+	}
+			
+.search_table span{
+	margin-left:5px;
+	font-size:13px;
+	font-weight: bold;
+	}
+
+
+
